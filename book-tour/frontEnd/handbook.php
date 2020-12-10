@@ -30,12 +30,12 @@
     <div id="body">
         <div class="container">
             <div class="row">
-                <div id="anhNen" class="col-lg-12 col-md-12 col-sm-12">
+                <div id="anhNen" class="col-lg-4 col-md-4 col-sm-4">
                     <img class="img-fluid" src="images/nen.jpg">
                 </div>
             </div>
             <div class="row">
-                <div id="main" class="col-lg-12 col-md-12 col-sm-12">
+                <div id="main" class="col-lg-4 col-md-4 col-sm-4">
                     <div class="handbook">
                         <h3>Những điều bạn cần biết khi đi du lịch</h3>
                         <h4>Luôn luôn vui vẻ không quạo</h4>

@@ -1,17 +1,17 @@
 <div class="row">
     <!--	Logo	-->
-    <div id="logo" class="col-lg-9 col-md-9 col-sm-12">
+    <div id="logo" class="col-lg-3 col-md-3 col-sm-4">
         <h1><a href="index.php"><img class="img-fluid" src="images/logo-2.png"></a></h1>
     </div>
     <!--	End Logo	-->
     <!--	Login	-->
-    <div id="login" class="col-lg-3 col-md-3 col-sm-12">
+    <div id="login" class="col-lg-1 col-md-1 col-sm-4">
         <h1><a href="">Đăng nhập</a></h1>
     </div>
     <!--	End Login	-->
 </div>
 <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-lg-4 col-md-4 col-sm-4">
         <!--	Menu	-->
         <nav>
             <div id="menu">
