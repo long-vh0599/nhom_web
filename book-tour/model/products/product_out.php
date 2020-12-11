@@ -1,4 +1,4 @@
-<?php
+cd <?php
 ob_start();
 session_start();
 include_once('config/connect.php');

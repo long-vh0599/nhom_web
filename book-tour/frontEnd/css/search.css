@@ -16,7 +16,7 @@
 	cursor: pointer;
 }
 
-#place, #price, #day-start {	
+/* #place, #price, #day-start {	
 	font-family: arial;
 	font-size: 14px;
 }
@@ -41,4 +41,5 @@
 #pagination ul li.active a{
 	background:#EB1F27;
 	border-color:#dee2e6;
-	color:#FFF;}		
+	color:#FFF;}		 */
+
