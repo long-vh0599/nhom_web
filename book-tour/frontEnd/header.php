@@ -19,7 +19,7 @@
                     <li class="menu-item"><a href="index.php">Du lịch</a></li>
                     <li class="menu-item"><a href="inland.php">Trong nước</a></li>
                     <li class="menu-item"><a href="outland.php">Ngoài nước</a></li>
-                    <li class="menu-item"><a href="handBook.php">Cẩm nang du lịch</a></li>
+                    <li class="menu-item"><a href="handbook.php">Cẩm nang du lịch</a></li>
                 </ul>
             </div>
         </nav>

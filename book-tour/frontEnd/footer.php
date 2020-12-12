@@ -2,7 +2,6 @@
 <div id="logo-2" class="col-lg-1 col-md-2 col-sm-4">
     <h2><a href="index.php"><img src="images/logo-2.png"></a></h2>
     <p>
-        ??????????????
     </p>
 </div> <!--	End Logo Footer	-->
 <!--	Address	-->
