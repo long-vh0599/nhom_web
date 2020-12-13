@@ -22,12 +22,12 @@ $row = mysqli_fetch_array($query);
                 <li id="price-number"><?php echo  number_format($row['prd_price'],0,'','.');?>đ</li>
                 <li><span>Số chỗ Max:</span> <?php echo $row['prd_slot'];?></li>
             </ul>
-            <div id="add-cart"><a href="modules/cart/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Mua ngay</a></div>
+            <div id="add-cart"><a href="../../model/products/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Book Now</a></div>
         </div>
     </div>
     <div id="product-body" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3>Đánh giá về <?php echo $row['prd_name'];?></h3>
+            <h3>Đánh giá về chuyến đi <?php echo $row['prd_name'];?></h3>
             <?php echo $row['prd_details'];?>
         </div>
     </div>
