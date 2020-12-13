@@ -54,6 +54,7 @@ include_once('config/connect.php');
                         case 'product': include_once('model/products/product_detail.php'); break;
                         case 'cart': include_once('../model/products/cart.php'); break;
                         case 'success': include_once('../model/products/success.php'); break;
+                        case 'posts': include_once('../model/products/post_detail.php'); break;
 						//case 'search': include_once('modules/search/search.php'); break;
 						//case 'product': include_once('modules/products/product.php'); break;
 						//case 'cart': include_once('modules/cart/cart.php'); break;
