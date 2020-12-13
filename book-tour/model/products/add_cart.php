@@ -8,7 +8,8 @@ if(isset($_SESSION['cart'][$prd_id])){
 else{
 	$_SESSION['cart'][$prd_id] = 1;
 }
-//header('location:../../index.php?page_layout=cart');
+header('location: ../../../../../../../2/nhom_web/book-tour/frontEnd/index.php?page_layout=cart');
 //header('location: ../../../../frontEnd/index.php?page_layout=cart');
-header('location: http://toidicode.com');
+//header('location: http://toidicode.com');
+
 ?>

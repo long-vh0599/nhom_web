@@ -4,11 +4,11 @@ function byNow() {
 }
 </script>
 <?php
-include "../../../book-tour/PHPMailer-master/src/PHPMailer.php";
-include "../../../book-tour/PHPMailer-master/src/Exception.php";
-include "../../../book-tour/PHPMailer-master/src/OAuth.php";
-include "../../../book-tour/PHPMailer-master/src/POP3.php";
-include "../../../book-tour/PHPMailer-master/src/SMTP.php";
+include "PHPMailer-master/src/PHPMailer.php";
+include "PHPMailer-master/src/Exception.php";
+include "PHPMailer-master/src/OAuth.php";
+include "PHPMailer-master/src/POP3.php";
+include "PHPMailer-master/src/SMTP.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -49,7 +49,7 @@ use PHPMailer\PHPMailer\Exception;
             $total_price_all +=$total_price; ?>
         <div class="cart-item row">
             <div class="cart-thumb col-lg-7 col-md-7 col-sm-12">
-                <img src="admin/img/products/<?php echo $row['prd_image']; ?>">
+                <img src="../../../../../2/nhom_web/book-tour/admin/images/<?php echo $row['prd_image']; ?>">
                 <h4><?php echo $row['prd_name']; ?></h4>
             </div>
 
@@ -60,7 +60,7 @@ use PHPMailer\PHPMailer\Exception;
             </div>
             <div class="cart-price col-lg-3 col-md-3 col-sm-12">
                 <b><?php echo   number_format($total_price, 0, '', '.'); ?>đ</b><a
-                    href="modules/cart/del_cart.php?prd_id=<?php echo $row['prd_id']; ?>">Xóa</a></div>
+                    href="../../../../../2/nhom_web/book-tour/model/products/del_cart.php?prd_id=<?php echo $row['prd_id']; ?>">Xóa</a></div>
         </div>
         <?php
         } ?>
@@ -173,7 +173,7 @@ $mail = new PHPMailer(true);                              // Passing 'true' enab
         $mail->AltBody = 'Mô tả đơn hàng';
      
         $mail->send();
-        header('location:index.php?page_layout=success');
+        header('location:index.php?page_layout=success'); 
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }

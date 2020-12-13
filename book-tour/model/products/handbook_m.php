@@ -22,7 +22,7 @@ $query = mysqli_query($conn, $sql);
 		}
 			?>
 			<div class="product-item card text-center">
-				<a href="index.php?page_layout=posts&post_id=<?php echo $row['post_id']; ?>"><img src="../../frontEnd/images/<?php echo $row['post_img']; ?>"></a>
+				<a href="index.php?page_layout=posts&post_id=<?php echo $row['post_id']; ?>"><img src="../../../../../2/nhom_web/book-tour/frontEnd/images/<?php echo $row['post_img']; ?>"></a>
 				<h4><a href="index.php?page_layout=posts&post_id=<?php echo $row['post_id']; ?>"><?php echo $row['post_name']; ?></a></h4>
 			</div>
 			<?php

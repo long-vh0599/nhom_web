@@ -10,7 +10,7 @@ $row = mysqli_fetch_array($query);
 <div id="product">
     <div id="product-head" class="row">
         <div id="product-img" class="col-lg-6 col-md-6 col-sm-12">
-            <img src="../../admin/images/<?php echo $row['prd_image'];?>">
+            <img src="../../../../../2/nhom_web/book-tour/admin/images/<?php echo $row['prd_image'];?>">
         </div>
         <div id="product-details" class="col-lg-6 col-md-6 col-sm-12">
             <h1><?php echo $row['prd_name'];?></h1>
@@ -22,7 +22,7 @@ $row = mysqli_fetch_array($query);
                 <li id="price-number"><?php echo  number_format($row['prd_price'],0,'','.');?>đ</li>
                 <li><span>Số chỗ Max:</span> <?php echo $row['prd_slot'];?></li>
             </ul>
-            <div id="add-cart"><a href="../../model/products/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Book Now</a></div>
+            <div id="add-cart"><a href="../../../../../2/nhom_web/book-tour/model/products/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Book Now</a></div>
         </div>
     </div>
     <div id="product-body" class="row">
