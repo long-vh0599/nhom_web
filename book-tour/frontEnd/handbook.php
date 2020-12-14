@@ -39,7 +39,7 @@
                     <div class="handbook">
                         <h3>Những điều bạn cần biết khi đi du lịch</h3>
                         <h4>Luôn luôn vui vẻ không quạo</h4>
-                        <?php include_once('model/products/handbook_m.php'); ?>
+                        <?php include_once('model/handbook/handbook_m.php'); ?>
                     </div>
                 </div>
             </div>
