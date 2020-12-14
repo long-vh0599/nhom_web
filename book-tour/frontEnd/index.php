@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cart.css">
@@ -36,6 +35,7 @@
                 <div id="main" class="col-lg-4 col-md-4 col-sm-4">
                     <div class="product">
                         <h3>Ưu đãi tháng này</h3>
+                        <?php include_once('model/products/sale.php'); ?>
                     </div>
                     <div class="product">
                         <h3>Điểm đến ưa thích</h3>

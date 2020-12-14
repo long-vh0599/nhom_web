@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/handbook.css">
-    <!--<link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/success.css">-->
-    <!--<script src="js/jquery-3.3.1.js"></script>
-    <script src="js/bootstrap.js"></script> -->
 </head>
 
 <body>
@@ -38,7 +31,7 @@
                 <div id="main" class="col-lg-4 col-md-4 col-sm-4">
                     <div class="handbook">
                         <h3>Những điều bạn cần biết khi đi du lịch</h3>
-                        <h4>Luôn luôn vui vẻ không quạo</h4>
+                        <?php include_once('model/handbook/handbook.php'); ?>
                     </div>
                 </div>
             </div>
