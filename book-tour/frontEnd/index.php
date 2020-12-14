@@ -62,7 +62,7 @@ include_once('config/connect.php');
 					}
 				}
 				else{
-					//include_once('modules/products/featured.php');
+					include_once('model/products/sale.php');
 					include_once('model/products/favorite.php');
 				}
 				?>

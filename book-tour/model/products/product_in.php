@@ -11,32 +11,27 @@ $sql = "SELECT * FROM product
 		LIMIT 6";
 $query = mysqli_query($conn, $sql);
 ?>
-<!--	Favorite Product	-->
+<!--	Product	-->
 <div class="products">
 	<?php
 	$i = 1;
 	while ($row = mysqli_fetch_array($query)) {
-		if ($i == 1) {
+
 	?>
-			<div class="product-list card-deck">
-			<?php
-		}
-			?>
-			<div class="product-item card text-center">
+		<div class="products-row">
+
+			<div class="col-lg-1 col-md-1 col-sm-1 product-item">
 				<a href="index.php?page_layout=product&prd_id=<?php echo $row['prd_id']; ?>"><img src="../admin/images/<?php echo $row['prd_image']; ?>"></a>
-				<h4><a href="index.php?page_layout=product&prd_id=<?php echo $row['prd_id']; ?>"><?php echo $row['prd_name']; ?></a></h4>
-				<p>Giá Bán: <span><?php echo  number_format($row['prd_price'], 0, '', '.'); ?>đ</span></p>
 			</div>
-			<?php
-			if ($i == 3) {
-			?>
+			<div class="col-lg-3 col-md-3 col-sm-3 product-item ">
+				<h3><a href="index.php?page_layout=product&prd_id=<?php echo $row['prd_id']; ?>"><?php echo $row['prd_name']; ?></a></h3>
+				<p>Giá: <span><?php echo  number_format($row['prd_price'], 0, '', '.'); ?>đ</span></p>
+				<h4>Ngày khởi hành: <?php echo $row['prd_date'] ?></h4>
+				<h4>Số chỗ: <?php echo $row['prd_slot'] ?></h4>
 			</div>
+
+		</div>
 	<?php
-				$i = 1;
-			} else {
-				$i++;
-			}
-		}
+	}
 	?>
 </div>
-<!--	End Favorite Product	-->
