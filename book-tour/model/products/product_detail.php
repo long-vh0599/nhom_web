@@ -22,7 +22,7 @@ $row = mysqli_fetch_array($query);
                 <li id="price-number"><?php echo  number_format($row['prd_price'],0,'','.');?>đ</li>
                 <li><span>Số chỗ Max:</span> <?php echo $row['prd_slot'];?></li>
             </ul>
-            <div id="add-cart"><a href="../../../../../2/nhom_web/book-tour/model/products/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Book Now</a></div>
+            <div id="add-cart"><a href="../../../../../2/nhom_web/book-tour/model/cart/add_cart.php?prd_id=<?php echo $row['prd_id'];?>">Book Now</a></div>
         </div>
     </div>
     <div id="product-body" class="row">
