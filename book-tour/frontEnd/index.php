@@ -27,6 +27,7 @@ include_once('config/connect.php');
         <div class="container">
             <?php include_once('header.php'); ?> 
         </div>
+        
     </div>
     <!--	End Header	-->
 
