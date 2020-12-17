@@ -43,9 +43,6 @@ body{
 	text-transform:capitalize;}
 #cart{
 	text-align:right;}	
-#cart a{
-	text-decoration:none;
-	text-transform:capitalize;}	
 #cart span{
 	display:inline-block;
 	width:30px;
@@ -54,6 +51,13 @@ body{
 	background:#EB1F27;
 	border-radius:100%;
 	text-align:center;}		
+.cart-text{
+	margin-top: 1.5rem;
+	margin-right: 0.5rem;
+}
+.cart-simp{
+	margin-top: 1rem;
+}
 #menu{
 	overflow:hidden;
 	background:#EB1F27;}

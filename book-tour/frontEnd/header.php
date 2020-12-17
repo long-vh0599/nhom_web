@@ -5,12 +5,10 @@
     </div>
     <!--	End Logo	-->
 
-    <!--	Login	-->
-    <div id="login" class="col-lg-1 col-md-1 col-sm-4">
-        <h1><a href="">Đăng nhập</a></h1>
-    </div>
-    <!--	End Login	-->
+    <!--    Cart        -->
     <?php include_once('../model/cart/cart_notify.php') ?>
+    <!--    End Cart     -->
+
 </div>
 <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
