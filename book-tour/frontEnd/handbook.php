@@ -31,7 +31,7 @@
                 <div id="main" class="col-lg-4 col-md-4 col-sm-4">
                     <div class="handbook">
                         <h3>Những điều bạn cần biết khi đi du lịch</h3>
-                        <?php include_once('model/handbook/handbook.php'); ?>
+                        <?php include_once('model/handbook/handbook_m.php'); ?>
                     </div>
                 </div>
             </div>

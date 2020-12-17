@@ -1,6 +1,6 @@
 <?php
 ob_start();
-session_start();
+//session_start();
 include_once('config/connect.php');
 ?>
 
@@ -13,6 +13,7 @@ $query = mysqli_query($conn, $sql);
 ?>
 <!--	Sale Product	-->
 <div class="products">
+	<h3>Tour đang được khuyến mãi</h3>
 	<?php
 	$i = 1;
 	while ($row = mysqli_fetch_array($query)) {
