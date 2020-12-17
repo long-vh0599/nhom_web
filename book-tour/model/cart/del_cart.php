@@ -7,6 +7,6 @@ if(count($_SESSION['cart']) == 0){
 	unset($_SESSION['cart']);
 }
 
-header('location: ../frontEnd/index.php?page_layout=cart');
+header('location: ../../frontEnd/index.php?page_layout=cart');
 
 ?>

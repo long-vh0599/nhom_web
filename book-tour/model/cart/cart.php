@@ -60,7 +60,7 @@ use PHPMailer\PHPMailer\Exception;
             </div>
             <div class="cart-price col-lg-3 col-md-3 col-sm-12">
                 <b><?php echo   number_format($total_price, 0, '', '.'); ?>đ</b><a
-                    href="del_cart.php?prd_id=<?php echo $row['prd_id']; ?>">Xóa</a></div>
+                    href="../model/cart/del_cart.php?prd_id=<?php echo $row['prd_id']; ?>">Xóa</a></div>
         </div>
         <?php
         } ?>

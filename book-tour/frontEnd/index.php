@@ -14,7 +14,7 @@ include_once('config/connect.php');
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/hanbook.css">
+    <link rel="stylesheet" href="css/handbook.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/success.css">
@@ -53,9 +53,9 @@ include_once('config/connect.php');
                 if(isset($_GET['page_layout'])){
 					switch($_GET['page_layout']){
                         case 'product': include_once('model/products/product_detail.php'); break;
-                        case 'cart': include_once('../../book-tour/model/cart/cart.php'); break;
-                        case 'success': include_once('../model/products/success.php'); break;
-                        case 'posts': include_once('../../book-tour/model/handbook/post_detail.php'); break;
+                        case 'cart': include_once('model/cart/cart.php'); break;
+                        case 'success': include_once('model/products/success.php'); break;
+                        case 'posts': include_once('model/handbook/post_detail.php'); break;
 						//case 'search': include_once('modules/search/search.php'); break;
 						//case 'product': include_once('modules/products/product.php'); break;
 						//case 'cart': include_once('modules/cart/cart.php'); break;
