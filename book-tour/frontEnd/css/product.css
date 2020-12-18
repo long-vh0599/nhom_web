@@ -5,6 +5,10 @@
 	background:#FFF;
 	border-radius:3px;
 	padding:10px 0;}
+#product-head h1{
+	font-family: arial;
+	font-size: 20px;
+}
 #product-img{
 	text-align:center;}	
 #product-img img{
@@ -74,7 +78,12 @@
 	font-size: 20px;
 	color: red;
 }
-
+#post-img{
+	text-align: center;
+}
+#post-img img{
+	width: 400px;
+}
 .card {
 	position: relative;
 	display: -ms-flexbox;

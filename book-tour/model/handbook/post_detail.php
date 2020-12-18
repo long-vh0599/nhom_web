@@ -6,16 +6,18 @@ $sql = "SELECT * FROM posts
 $query = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($query);
 ?>
-<!--	List Product	-->
+<!--	List Post	-->
 <div id="product">
     <div id="product-head" class="row">
-        <h1><?php echo $row['post_name'];?></h1>
-        <div id="product-img" class="col-lg-6 col-md-6 col-sm-12">
-             
-            <img src="../frontEnd/images/<?php echo $row['post_img'];?>">
+        <div>
+            <h1><?php echo $row['post_name']; ?></h1>
+        </div>
+        <div id="post-img" class="col-lg-4 col-md-4 col-sm-4">
+
+            <img src="../frontEnd/images/<?php echo $row['post_img']; ?>">
         </div>
         <p>
             <?php echo $row['post_details'] ?>
         </p>
     </div>
-</div> 
+</div>
