@@ -10,6 +10,7 @@ include_once('config/connect.php');
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cart.css">
@@ -57,9 +58,6 @@ include_once('config/connect.php');
                         case 'success': include_once('model/products/success.php'); break;
                         case 'posts': include_once('model/handbook/post_detail.php'); break;
 						//case 'search': include_once('modules/search/search.php'); break;
-						//case 'product': include_once('modules/products/product.php'); break;
-						//case 'cart': include_once('modules/cart/cart.php'); break;
-						//case 'success': include_once('modules/cart/success.php'); break;
 					}
 				}
 				else{

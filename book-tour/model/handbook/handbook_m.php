@@ -22,8 +22,8 @@ while ($row = mysqli_fetch_array($query)) {
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 handbook-item ">
             <h3><a href="index.php?page_layout=posts&post_id=<?php echo $row['post_id']; ?>"><?php echo $row['post_name']; ?></a></h3>
+            <h4><?php echo $row['post_details']; ?></h4>
         </div>
-
     </div>
 <?php
 }

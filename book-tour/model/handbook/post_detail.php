@@ -7,17 +7,14 @@ $query = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($query);
 ?>
 <!--	List Post	-->
-<div id="product">
-    <div id="product-head" class="row">
-        <div>
-            <h1><?php echo $row['post_name']; ?></h1>
-        </div>
+<div id="handbook">
+    <div id="handbook-head" class="row">
         <div id="post-img" class="col-lg-4 col-md-4 col-sm-4">
-
+            <h1><?php echo $row['post_name']; ?></h1>
             <img src="../frontEnd/images/<?php echo $row['post_img']; ?>">
         </div>
-        <p>
+        <h3>
             <?php echo $row['post_details'] ?>
-        </p>
+        </h3>
     </div>
 </div>

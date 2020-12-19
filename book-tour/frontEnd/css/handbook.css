@@ -31,12 +31,30 @@
 	font-weight:bold;
 	font-size: 20px;
 }
-
 .handbook-item h4{
-	border-top: 1px dashed #d3d3d3;
+	border-top: #a1a1a1 dashed 1px;
 	margin-top: 10px;
-	padding-top: 10px;
-	font-family: arial;
-	color: darkgrey;
-	font-size: 14px;
+	padding-top: 5px;
+}
+.handbook-item h4{
+	color: #a1a1a1;
+	white-space: nowrap;
+ 	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#handbook{
+	padding:0 15px;
+	margin-top:20px;}
+#handbook-head{
+	background:#FFF;
+	border-radius:3px;
+	padding:10px 0;}
+#handbook-head h1{
+	font-size: 20px;
+}
+#post-img{
+	text-align: center;
+}
+#post-img img{
+	width: 400px;
 }

@@ -78,12 +78,6 @@
 	font-size: 20px;
 	color: red;
 }
-#post-img{
-	text-align: center;
-}
-#post-img img{
-	width: 400px;
-}
 .card {
 	position: relative;
 	display: -ms-flexbox;
