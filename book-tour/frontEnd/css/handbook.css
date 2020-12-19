@@ -38,9 +38,12 @@
 }
 .handbook-item h4{
 	color: #a1a1a1;
-	white-space: nowrap;
+	/* white-space: nowrap; */
  	overflow: hidden;
 	text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 #handbook{
 	padding:0 15px;
