@@ -10,7 +10,7 @@ include_once('config/connect.php');
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cart.css">
@@ -42,14 +42,7 @@ include_once('config/connect.php');
             </div>
             <div class="row">
                 <div id="main" class="col-lg-4 col-md-4 col-sm-4">
-                    <!-- <div class="product">
-                        <h3>Ưu đãi tháng này</h3>
-                        
-                    </div>
-                    <div class="product">
-                        <h3>Điểm đến ưa thích</h3>
-                        
-                    </div> -->
+                    
                     <?php
                 if(isset($_GET['page_layout'])){
 					switch($_GET['page_layout']){

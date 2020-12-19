@@ -13,8 +13,8 @@ $row = mysqli_fetch_array($query);
             <h1><?php echo $row['post_name']; ?></h1>
             <img src="../frontEnd/images/<?php echo $row['post_img']; ?>">
         </div>
-        <h3>
+        <p>
             <?php echo $row['post_details'] ?>
-        </h3>
+        </p>
     </div>
 </div>
