@@ -110,8 +110,8 @@ if(isset($_POST['sbm'])){
                                     <label>Chuyến đi yêu thích</label>
                                     <div class="checkbox">
                                         <label>
-                                            <input name="prd_status" type="checkbox" value=1>Yêu thích
-                                            <input name="prd_status" type="checkbox" value=2>Khuyến Mãi
+                                            <input name="prd_status" type="radio" value=1>Yêu thích
+                                            <input name="prd_status" type="radio" value=2>Khuyến Mãi
                                         </label>
                                     </div>
                                 </div>

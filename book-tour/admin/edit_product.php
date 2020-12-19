@@ -126,8 +126,8 @@ if(isset($_POST['sbm'])){
                                     <label>Sản phẩm nổi bật</label>
                                     <div class="checkbox">
                                         <label>
-                                            <input <?php if($row['prd_status'] == 1){echo 'checked';}?> name="prd_status" type="checkbox" value=1>Yêu thích
-                                            <input <?php if($row['prd_status'] == 2){echo 'checked';}?> name="prd_status" type="checkbox" value=1>Khuyến mãi
+                                            <input <?php if($row['prd_status'] == 1){echo 'checked';}?> name="prd_status" type="radio" value=1>Yêu thích
+                                            <input <?php if($row['prd_status'] == 2){echo 'checked';}?> name="prd_status" type="radio" value=2>Khuyến mãi
                                         </label>
                                     </div>
                                 </div>
