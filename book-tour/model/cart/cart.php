@@ -17,9 +17,9 @@ use PHPMailer\PHPMailer\Exception;
 <!--	Cart	-->
 <div id="my-cart">
     <div class="row">
-        <div class="cart-nav-item col-lg-7 col-md-7 col-sm-12">Thông tin sản phẩm</div>
-        <div class="cart-nav-item col-lg-2 col-md-2 col-sm-12">Tùy chọn</div>
-        <div class="cart-nav-item col-lg-3 col-md-3 col-sm-12">Giá</div>
+        <div class="cart-nav-item col-lg-2 col-md-2 col-sm-4">Thông tin sản phẩm</div>
+        <div class="cart-nav-item col-lg-1 col-md-1 col-sm-4">Tùy chọn</div>
+        <div class="cart-nav-item col-lg-1 col-md-1 col-sm-4">Giá</div>
     </div>
 
 
@@ -48,17 +48,17 @@ use PHPMailer\PHPMailer\Exception;
             $total_price=$_SESSION['cart'][$row['prd_id']]*$row['prd_price'];
             $total_price_all +=$total_price; ?>
         <div class="cart-item row">
-            <div class="cart-thumb col-lg-7 col-md-7 col-sm-12">
+            <div class="cart-thumb col-lg-2 col-md-2 col-sm-4">
                 <img src="../admin/images/<?php echo $row['prd_image']; ?>">
                 <h4><?php echo $row['prd_name']; ?></h4>
             </div>
 
-            <div class="cart-quantity col-lg-2 col-md-2 col-sm-12">
+            <div class="cart-quantity col-lg-1 col-md-1 col-sm-4">
                 <input type="number" id="quantity" class="form-control form-blue quantity"
                     name="quantity[<?php echo $row['prd_id']; ?>]"
                     value="<?php echo $_SESSION['cart'][$row['prd_id']]; ?>" min="1">
             </div>
-            <div class="cart-price col-lg-3 col-md-3 col-sm-12">
+            <div class="cart-price col-lg-1 col-md-1 col-sm-4">
                 <b><?php echo   number_format($total_price, 0, '', '.'); ?>đ</b><a
                     href="../model/cart/del_cart.php?prd_id=<?php echo $row['prd_id']; ?>">Xóa</a></div>
         </div>
@@ -66,11 +66,11 @@ use PHPMailer\PHPMailer\Exception;
         } ?>
 
         <div class="row">
-            <div class="cart-thumb col-lg-7 col-md-7 col-sm-12">
+            <div class="cart-thumb col-lg-2 col-md-2 col-sm-4">
                 <button id="update-cart" class="btn btn-success" type="submit" name="sbm">Cập nhật giỏ hàng</button>
             </div>
-            <div class="cart-total col-lg-2 col-md-2 col-sm-12"><b>Tổng cộng:</b></div>
-            <div class="cart-price col-lg-3 col-md-3 col-sm-12">
+            <div class="cart-total col-lg-1 col-md-1 col-sm-4"><b>Tổng cộng:</b></div>
+            <div class="cart-price col-lg-1 col-md-1 col-sm-4">
                 <b><?php echo   number_format($total_price_all, 0, '', '.'); ?>đ</b></div>
         </div>
     </form>
