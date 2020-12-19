@@ -86,7 +86,7 @@ if(isset($_POST['sbm'])){
                                 </div>    
                                 <div class="form-group">
                                     <label>Ngày Khởi Hành</label>
-                                    <input type="text" name="prd_date" required value="<?php echo $row['prd_date'];?>" class="form-control">
+                                    <input type="date" name="prd_date" required value="<?php echo $row['prd_date'];?>" class="form-control">
                                 </div>                  
                                 <div class="form-group">
                                     <label>Số Chỗ </label>
