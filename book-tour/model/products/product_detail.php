@@ -64,7 +64,7 @@ $row = mysqli_fetch_array($query);
                     <label>Nội dung:</label>
                     <textarea name="comm_details" required rows="8" class="form-control"></textarea>     
                 </div>
-                <button type="submit" name="sbm" class="btn-primary">Gửi</button>
+                <button type="submit" name="sbm" class="btn-primary"><p>Gửi</p></button>
             </form> 
         </div>
     </div>

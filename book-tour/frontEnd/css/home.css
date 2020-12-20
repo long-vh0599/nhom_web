@@ -1,11 +1,4 @@
-*{
-	margin:0;
-	padding:0;
-	font-family:arial;
-	font-size:13px;
-	color:#333;}
-body{
-	background:#E7ECF4;}	
+
 #header{
 	background:#222;}	
 #logo, #search, #cart{
@@ -24,7 +17,7 @@ body{
 #search button:hover{
 	background:#C60A11;}
 #login{
-	text-align: center;
+	text-align: right;
 	margin-top: 1.5rem !important;
 }
 
@@ -74,11 +67,8 @@ body{
 .menu-item:hover{
 	background:#C60A11;
 	cursor:pointer;}
-#main, #sidebar{
+#main{
 	margin-top:10px;}	
-	
-#slide .carousel-inner{
-	border-radius:3px !important;}	
 
 .products{
 	margin-top:20px;}
@@ -127,15 +117,11 @@ body{
 	color: darkgrey;
 	font-size: 14px;
 }
-
 /*	Fix Flex-box	*/	
 .product-list:last-child .product-item{
 	flex-grow:0;
 	flex-basis:32.6%;}
 	
-.banner-item{
-	margin-bottom:10px;}
-
 #footer{
 	margin-top:20px;
 	background:#FFF;}
@@ -152,14 +138,9 @@ body{
 .text-center {
 	text-align: center !important;
 }
-	
-@media (max-width:992px){
-	#banner{
-		display:none;}
-}
+
 @media (max-width:768px){
-	#slide{
-		display:none;}
+	
 	#cart{
 		text-align:left;}
 	#header{
