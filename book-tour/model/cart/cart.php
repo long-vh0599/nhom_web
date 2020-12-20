@@ -3,17 +3,6 @@ function byNow() {
     document.getElementById('frm').submit();
 }
 </script>
-<?php
-include "PHPMailer-master/src/PHPMailer.php";
-include "PHPMailer-master/src/Exception.php";
-include "PHPMailer-master/src/OAuth.php";
-include "PHPMailer-master/src/POP3.php";
-include "PHPMailer-master/src/SMTP.php";
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-?>
 <!--	Cart	-->
 <div id="my-cart">
     <div class="row">
@@ -141,42 +130,7 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
 		Cám ơn quý khách đã mua hàng tại Shop của chúng tôi, bộ phận giao hàng sẽ liên hệ với quý khách để xác nhận sau 5 phút kể từ khi đặt hàng thành công và chuyển hàng đến quý khách chậm nhất sau 24 tiếng.
 	</p>
 	';
-    //////////////////////////
-$mail = new PHPMailer(true);                              // Passing 'true' enables exceptions
-    try {
-        //Server settings
-        $mail->SMTPDebug = 2;                                 // Enable verbose debug output
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'babydontcry991212@gmail.com';                 // SMTP username
-        $mail->Password = 'conffyggptxtposh';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 'ssl' also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
-     
-        //Recipients
-        $mail->CharSet = 'UTF-8';
-        $mail->setFrom('babydontcry991212@gmail.com', 'Vietpro Mobile Shop');				// Gửi mail tới Mail Server
-        $mail->addAddress($user_mail);               // Gửi mail tới mail người nhận
-        //$mail->addReplyTo('ceo.vietpro@gmail.com', 'Information');
-        $mail->addCC('babydontcry991212@gmail.com');
-        //$mail->addBCC('bcc@example.com');
-     
-        //Attachments
-        //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-     
-        //Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Xác nhận đơn hàng từ Vietpro Mobile Shop';
-        $mail->Body    = $str_body;
-        $mail->AltBody = 'Mô tả đơn hàng';
-     
-        $mail->send();
-        header('location:index.php?page_layout=success'); 
-    } catch (Exception $e) {
-        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-    }
+    
 }
 ?>
 
