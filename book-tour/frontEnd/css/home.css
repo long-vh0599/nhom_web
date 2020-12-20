@@ -74,11 +74,8 @@ body{
 .menu-item:hover{
 	background:#C60A11;
 	cursor:pointer;}
-#main, #sidebar{
+#main{
 	margin-top:10px;}	
-	
-#slide .carousel-inner{
-	border-radius:3px !important;}	
 
 .products{
 	margin-top:20px;}
@@ -128,14 +125,6 @@ body{
 	font-size: 14px;
 }
 
-/*	Fix Flex-box	*/	
-.product-list:last-child .product-item{
-	flex-grow:0;
-	flex-basis:32.6%;}
-	
-.banner-item{
-	margin-bottom:10px;}
-
 #footer{
 	margin-top:20px;
 	background:#FFF;}
@@ -152,14 +141,9 @@ body{
 .text-center {
 	text-align: center !important;
 }
-	
-@media (max-width:992px){
-	#banner{
-		display:none;}
-}
+
 @media (max-width:768px){
-	#slide{
-		display:none;}
+	
 	#cart{
 		text-align:left;}
 	#header{
