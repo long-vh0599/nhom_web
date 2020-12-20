@@ -1,10 +1,12 @@
 <div class="row">
     <!--	Logo	-->
-    <div id="logo" class="col-lg-3 col-md-3 col-sm-4">
+    <div id="logo" class="col-lg-2 col-md-2 col-sm-4">
         <h1><a href="index.php"><img class="img-fluid" src="images/logo-2.png"></a></h1>
     </div>
     <!--	End Logo	-->
-
+    <div id="login" class="col-lg-1 col-md-1 col-sm-4">
+        <h1><a href="login.php">Đăng nhập</a></h1>
+    </div>
     <!--    Cart        -->
     <?php include_once('../model/cart/cart_notify.php') ?>
     <!--    End Cart     -->

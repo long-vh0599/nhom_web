@@ -58,13 +58,13 @@ $row = mysqli_fetch_array($query);
                 </div>
                 <div class="">
                     <label>Email:</label>
-                    <input name="comm_mail" required type="email" class="form-control" id="pwd">
+                    <input name="comm_mail" required type="email" class="form-control">
                 </div>
                 <div class="">
                     <label>Nội dung:</label>
                     <textarea name="comm_details" required rows="8" class="form-control"></textarea>     
                 </div>
-                <button type="submit" name="sbm" class="btn btn-primary">Gửi</button>
+                <button type="submit" name="sbm" class="btn-primary">Gửi</button>
             </form> 
         </div>
     </div>
@@ -148,8 +148,3 @@ $row = mysqli_fetch_array($query);
     <!--	End Comments List	-->
 </div>
 <!--	End Product	--> 
-<div id="pagination">
-    <ul class="pagination">
-        <?php echo $list_pages;?>
-    </ul> 
-</div> 

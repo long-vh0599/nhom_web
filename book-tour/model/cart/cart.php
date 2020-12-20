@@ -194,7 +194,7 @@ $mail = new PHPMailer(true);                              // Passing 'true' enab
             <div id="customer-mail" class="col-lg-4 col-md-4 col-sm-12">
                 <input placeholder="Email (bắt buộc)" type="text" name="mail" class="form-control" required>
             </div>
-            <div id="customer-add" class="col-lg-12 col-md-12 col-sm-12">
+            <div id="customer-add" class="col-lg-4 col-md-4 col-sm-4">
                 <input placeholder="Địa chỉ nhà riêng hoặc cơ quan (bắt buộc)" type="text" name="add"
                     class="form-control" required>
             </div>
@@ -202,13 +202,13 @@ $mail = new PHPMailer(true);                              // Passing 'true' enab
         </div>
     </form>
     <div class="row">
-        <div class="by-now col-lg-6 col-md-6 col-sm-12">
+        <div class="by-now col-lg-2 col-md-2 col-sm-2">
             <a onclick="byNow();" href="#">
                 <b>Mua ngay</b>
                 <span>Giao hàng tận nơi siêu tốc</span>
             </a>
         </div>
-        <div class="by-now col-lg-6 col-md-6 col-sm-12">
+        <div class="by-now col-lg-2 col-md-2 col-sm-2">
             <a href="#">
                 <b>Trả góp Online</b>
                 <span>Vui lòng call (+84) 0988 550 553</span>

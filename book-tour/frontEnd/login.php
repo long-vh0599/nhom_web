@@ -1,19 +1,14 @@
-<?php
-if(!defined('TEMPLATE')){
-	die('Bạn không có quyền truy cập vào file này !');
-}
+<?php 
+session_start();
+include_once ("../config/connect.php");
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BacWithHerFriend - Administrator</title>
-<!-- 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/datepicker3.css" rel="stylesheet">
-<link href="css/bootstrap-table.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet"> -->
+<title>Đăng Nhập</title>
+
 <link rel="stylesheet" href="css/home.css">
 
 </head>
@@ -24,11 +19,12 @@ if(!defined('TEMPLATE')){
 if(isset($_POST['sbm'])){
 	$mail = $_POST['mail'];
 	$pass = $_POST['pass'];
+	$mail = (String)$mail;
+	$pass = (String)$pass;
 	
 	$sql = "SELECT * FROM user
 			WHERE user_mail = '$mail'
-			AND user_pass = '$pass'
-			AND user_level = 1";
+			AND user_pass = '$pass'";
 	$query = mysqli_query($conn, $sql);
 	$row = mysqli_num_rows($query);
 	
@@ -38,7 +34,7 @@ if(isset($_POST['sbm'])){
 		header('location:index.php');
 	}
 	else{
-		$error = '<div class="alert alert-danger">Tài khoản không phải admin !</div>';
+		$error = '<div class="alert alert-danger">Tài khoản không hợp lệ !</div>';
 	}
 }
 
@@ -46,7 +42,7 @@ if(isset($_POST['sbm'])){
 	
 	<div class="row">
 			<div class="login">
-				<div class="login-heading">BacWithHerFriend- Administrator</div>
+				<div class="login-heading">Đăng nhập</div>
 				<div class="login-body">
                 	<?php
                     if(isset($error)){echo $error;}

@@ -86,7 +86,7 @@ if(isset($_POST['sbm'])){
                                 </div>    
                                 <div class="form-group">
                                     <label>Ngày Khởi Hành</label>
-                                    <input type="text" name="prd_date" required value="<?php echo $row['prd_date'];?>" class="form-control">
+                                    <input type="date" name="prd_date" required value="<?php echo $row['prd_date'];?>" class="form-control">
                                 </div>                  
                                 <div class="form-group">
                                     <label>Số Chỗ </label>
@@ -126,8 +126,8 @@ if(isset($_POST['sbm'])){
                                     <label>Sản phẩm nổi bật</label>
                                     <div class="checkbox">
                                         <label>
-                                            <input <?php if($row['prd_status'] == 1){echo 'checked';}?> name="prd_status" type="checkbox" value=1>Yêu thích
-                                            <input <?php if($row['prd_status'] == 2){echo 'checked';}?> name="prd_status" type="checkbox" value=1>Khuyến mãi
+                                            <input <?php if($row['prd_status'] == 1){echo 'checked';}?> name="prd_status" type="radio" value=1>Yêu thích
+                                            <input <?php if($row['prd_status'] == 2){echo 'checked';}?> name="prd_status" type="radio" value=2>Khuyến mãi
                                         </label>
                                     </div>
                                 </div>
