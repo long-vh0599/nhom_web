@@ -203,15 +203,6 @@ $mail = new PHPMailer(true);
                 <span>Giao hàng tận nơi siêu tốc</span>
             </a>
         </div>
-<<<<<<< HEAD
-        <div class="by-now col-lg-2 col-md-2 col-sm-4">
-            <a href="#">
-                <b>Trả góp Online</b>
-                <span>Vui lòng call (+84) 0933 444 555</span>
-            </a>
-        </div>
-=======
         
->>>>>>> 78c12f7ad29c46f6f39ceb42fb86e57801c160ac
     </div>
 </div>
