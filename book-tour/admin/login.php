@@ -9,16 +9,12 @@ if(!defined('TEMPLATE')){
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BacWithHerFriend - Administrator</title>
-
+<!-- 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
 <link href="css/bootstrap-table.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
+<link href="css/styles.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="css/home.css">
 
 </head>
 
@@ -48,10 +44,9 @@ if(isset($_POST['sbm'])){
 ?>
 	
 	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading">BacWithHerFriend- Administrator</div>
-				<div class="panel-body">
+			<div class="login">
+				<div class="login-heading">BacWithHerFriend- Administrator</div>
+				<div class="login-body">
                 	<?php
                     if(isset($error)){echo $error;}
 					?>
@@ -73,7 +68,6 @@ if(isset($_POST['sbm'])){
 					</form>
 				</div>
 			</div>
-		</div><!-- /.col-->
 	</div><!-- /.row -->
 </body>
 

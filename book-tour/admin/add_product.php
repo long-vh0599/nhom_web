@@ -70,14 +70,14 @@ if(isset($_POST['sbm'])){
                                 </div>    
                                 <div class="form-group">
                                     <label>Ngày Khởi Hành</label>
-                                    <input required name="prd_date" type="text" class="form-control">
+                                    <input required name="prd_date" type="date" class="form-control">
                                 </div>                  
                                 <div class="form-group">
                                     <label>Số chỗ </label>
                                     <input required name="prd_slot" type="text" class="form-control">
                                 </div>  
                                 <div class="form-group">
-                                    <label>Thời gian chuyến đi trong :</label>
+                                    <label>Thời gian chuyến đi trong </label>
                                     <input required name="prd_time" type="text" class="form-control">
                                 </div>  
                                 
@@ -110,8 +110,8 @@ if(isset($_POST['sbm'])){
                                     <label>Chuyến đi yêu thích</label>
                                     <div class="checkbox">
                                         <label>
-                                            <input name="prd_status" type="checkbox" value=1>Yêu thích
-                                            <input name="prd_status" type="checkbox" value=2>Khuyến Mãi
+                                            <input name="prd_status" type="radio" checked="checked" value=1>Yêu thích
+                                            <input name="prd_status" type="radio" value=2>Khuyến Mãi
                                         </label>
                                     </div>
                                 </div>
