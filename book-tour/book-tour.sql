@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `user_level` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INSERT `user` (`user_id`, `user_name`, `user_mail`, `user_pass`, `user_level`) VALUES
+INSERT INTO `user` (`user_id`, `user_name`, `user_mail`, `user_pass`, `user_level`) VALUES
 (1, 'bacwithherfriend', 'admin@gmail.com', '123456', 1),
 (2, 'thanh', 'thanh@gmail.com', '123456', 1),
 (3, 'long', 'long@gmail.com', '123456', 1),
