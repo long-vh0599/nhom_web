@@ -142,33 +142,28 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
 	</p>
 	';
     //////////////////////////
-$mail = new PHPMailer(true);                              // Passing 'true' enables exceptions
+$mail = new PHPMailer(true);                              
     try {
         //Server settings
-        $mail->SMTPDebug = 2;                                 // Enable verbose debug output
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'babydontcry991212@gmail.com';                 // SMTP username
-        $mail->Password = 'conffyggptxtposh';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 'ssl' also accepted
-        $mail->Port = 587;                                    // TCP port to connect to
+        $mail->SMTPDebug = 2;                                
+        $mail->isSMTP();                                     
+        $mail->Host = 'smtp.gmail.com';  
+        $mail->SMTPAuth = true;                          
+        $mail->Username = 'dothanhqt9x@gmail.com';                
+        $mail->Password = 'wihntmakecomfmzw';                        
+        $mail->SMTPSecure = 'tls';                           
+        $mail->Port = 587;                                  
      
         //Recipients
         $mail->CharSet = 'UTF-8';
-        $mail->setFrom('babydontcry991212@gmail.com', 'Vietpro Mobile Shop');				// Gửi mail tới Mail Server
-        $mail->addAddress($user_mail);               // Gửi mail tới mail người nhận
-        //$mail->addReplyTo('ceo.vietpro@gmail.com', 'Information');
-        $mail->addCC('babydontcry991212@gmail.com');
-        //$mail->addBCC('bcc@example.com');
-     
-        //Attachments
-        //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-     
+        $mail->setFrom('dothanhqt9x@gmail.com', 'BacWithHerFriend Tour');				
+        $mail->addAddress($user_mail);              
+        
+        $mail->addCC('dothanhqt9x@gmail.com');
+        
         //Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Xác nhận đơn hàng từ Vietpro Mobile Shop';
+        $mail->isHTML(true);                                  // theo kieu HTML
+        $mail->Subject = 'Xác nhận đơn hàng từ BacWithHerFriend';
         $mail->Body    = $str_body;
         $mail->AltBody = 'Mô tả đơn hàng';
      
@@ -208,12 +203,6 @@ $mail = new PHPMailer(true);                              // Passing 'true' enab
                 <span>Giao hàng tận nơi siêu tốc</span>
             </a>
         </div>
-        <div class="by-now col-lg-6 col-md-6 col-sm-12">
-            <a href="#">
-                <b>Trả góp Online</b>
-                <span>Vui lòng call (+84) 0988 550 553</span>
-            </a>
-        </div>
+        
     </div>
 </div>
-<!--	End Customer Info	-->
