@@ -31,15 +31,23 @@
                 </div>
             </div>
             <div class="row">
-                <?php include_once('search.php'); ?>
+                <?php include_once('search_box_out.php'); ?>
             </div>
             <div class="row">
-                <div id="main" class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="product">
+                <?php
+                if(isset($_GET['page_layout'])){
+					switch($_GET['page_layout']){
+						case 'search': include_once('../model/search/search_out.php'); break;
+					}
+				}
+				else{ ?>
+					<div class="product">
                         <h3>Các địa điểm du lịch nước ngoài</h3>
                         <?php include_once('model/products/product_out.php'); ?>
                     </div>
-                </div>
+                <?php
+				}
+				?>
             </div>
         </div>
     </div>
