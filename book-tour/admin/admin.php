@@ -35,7 +35,7 @@ if (!defined('TEMPLATE')) {
 				<li class="active menu-item"><a href="index.php"> Dashboard</a></li>
 				<li class="menu-item"><a href="index.php?page_layout=user">Quản lý thành viên</a></li>
 				<li class="menu-item"><a href="index.php?page_layout=product">Quản lý sản phẩm</a></li>
-				<li class="menu-item"><a href="index.php"></svg> Quản lý bình luận</a></li>
+				<li class="menu-item"><a href="index.php"> Quản lý bình luận</a></li>
 				<li class="menu-item"><a href="index.php"> Cấu hình</a></li>
 			</ul>
 

@@ -76,7 +76,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
 								INNER JOIN category
 								ON product.cat_id = category.cat_id
 								ORDER BY prd_id DESC
-								LIMIT $per_row, $rows_per_page";
+								-- LIMIT $per_row, $rows_per_page";
                             $query = mysqli_query($conn, $sql);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>

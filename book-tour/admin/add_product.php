@@ -37,9 +37,6 @@ if (isset($_POST['sbm'])) {
 <div class="col-sm-3 col-lg-3 main">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="#"><svg class="glyph stroked home">
-                        <use xlink:href="#stroked-home"></use>
-                    </svg></a></li>
             <li><a href="">Quản lý sản phẩm</a></li>
             <li class="active">Thêm sản phẩm</li>
         </ol>
