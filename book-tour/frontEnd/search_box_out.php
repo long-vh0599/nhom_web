@@ -29,7 +29,7 @@
                 <option value="4000000"> 4 triệu</option>
                 <option value="6000000"> 6 triệu</option>
                 <option value="8000000"> 8 triệu</option>
-                <option value="10000000"> 10 triệu</option>
+                <option value="100000000"> 100 triệu</option>
             </select>
 
             <!-- <label for="day-start">Ngày khởi hành:</label>
