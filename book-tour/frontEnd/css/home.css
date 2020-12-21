@@ -109,7 +109,7 @@
 	font-size: 14px;
 }
 /*	Fix Flex-box	*/	
-.product-list:last-child .product-item{
+.product-list .product-item{
 	flex-grow:0;
 	flex-basis:33%;}
 	
