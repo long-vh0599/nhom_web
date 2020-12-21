@@ -34,7 +34,7 @@ if ($page_next > $total_pages) {
 }
 $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_layout=product&page=' . $page_next . '">&raquo;</a></li>';
 ?>
-<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+<div class="col-sm-3 col-lg-3 main">
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#"><img class="icon-img" src="images/icon/home.png"></a></li>
@@ -44,7 +44,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
     <!--/.row-->
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4">
             <h1 class="page-header">Danh sách các Tour</h1>
         </div>
     </div>
@@ -55,7 +55,7 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
         </a>
     </div>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <table data-toolbar="#toolbar" data-toggle="table">
@@ -87,8 +87,8 @@ $list_pages .= '<li class="page-item"><a class="page-link" href="index.php?page_
                                     <td style="text-align: center"><img width="130" height="180" src="images/<?php echo $row['prd_image']; ?>" /></td>
                                     <td><?php echo $row['cat_name']; ?></td>
                                     <td class="form-group">
-                                        <a href="index.php?page_layout=edit_product&prd_id=<?php echo $row['prd_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i>Sửa</a>
-                                        <a href="del_product.php?prd_id=<?php echo $row['prd_id']; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i>Xóa</a>
+                                        <a href="index.php?page_layout=edit_product&prd_id=<?php echo $row['prd_id']; ?>" class="btn btn-primary">Sửa</a>
+                                        <a href="del_product.php?prd_id=<?php echo $row['prd_id']; ?>" class="btn btn-danger">Xóa</a>
                                     </td>
                                 </tr>
                             <?php

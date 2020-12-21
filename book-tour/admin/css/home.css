@@ -106,6 +106,10 @@ h3, h4 {
 /* body */
 .sidebar{
 	background-color: #fff;
+	border-right: 2px solid #444;
+}
+.static {
+	padding-left: 10px;
 }
 .menu a{
 	font-size: 16px;
@@ -114,19 +118,46 @@ h3, h4 {
 	color: #fff;
 }
 .active{
-	width: 100%;
 	background-color: #59b7ff;
 }
 .menu-item{
-	float: left;
     list-style: none;
     padding: 10px;
     border-top: 1px solid #C60A11;
 }
+/* static */
 .breadcrumb {
-	float: left;
+	display: flex;
     list-style: none;
     padding: 5px;
+}
+.page-header {
+	text-align: left;
+	font-size: 30px;
+	color: #238ada;
+}
+.panel{
+	background-color: #fff;
+}
+.panel-yellow img{
+	background-color: yellow;
+}
+.panel-orange img{
+	background-color: orange;
+}
+.panel-pink img{
+	background-color: pink;
+}
+.widget{
+	padding: 5px 5px;
+}
+.large {
+	color: #5f6468;
+	font-size: 2em;
+}
+.small{
+	color: #9fadbb;
+	font-size: 14px;
 }
 /*Buttons*/
 

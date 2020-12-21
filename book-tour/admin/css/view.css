@@ -30,8 +30,8 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  /* margin-right: -15px;
+  /* flex-wrap: wrap;
+  margin-right: -15px;
   margin-left: -15px; */
 }
 
@@ -47,8 +47,6 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (min-width: 576px) {
   .col-sm {

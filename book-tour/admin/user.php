@@ -3,7 +3,7 @@ if (!defined('TEMPLATE')) {
     die('Bạn không có quyền truy cập vào file này !');
 }
 ?>
-<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+<div class="col-sm-3 col-lg-4 main">
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#"><img class="icon-img" src="images/icon/home.png"></a></li>
@@ -13,7 +13,7 @@ if (!defined('TEMPLATE')) {
     <!--/.row-->
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4">
             <h1 class="page-header">Danh sách thành viên</h1>
         </div>
     </div>
@@ -24,7 +24,7 @@ if (!defined('TEMPLATE')) {
         </a>
     </div>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-4">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <table data-toolbar="#toolbar" data-toggle="table">
@@ -54,13 +54,13 @@ if (!defined('TEMPLATE')) {
                                                             } else {
                                                                 echo 'label-success';
                                                             } ?>"><?php if ($row['user_level'] == 1) {
-                                                                                                                                                    echo 'Admin';
-                                                                                                                                                } else {
-                                                                                                                                                    echo 'Member';
-                                                                                                                                                } ?></span></td>
+                                                                        echo 'Admin';
+                                                                    } else {
+                                                                        echo 'Member';
+                                                                    } ?></span></td>
                                     <td class="form-group">
-                                        <a href="index.php?page_layout=edit_user&user_id=<?php echo $row['user_id']; ?>" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
-                                        <a href="del_user.php?user_id=<?php echo $row['user_id']; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                        <a href="index.php?page_layout=edit_user&user_id=<?php echo $row['user_id']; ?>" class="btn btn-primary"></a>
+                                        <a href="del_user.php?user_id=<?php echo $row['user_id']; ?>" class="btn btn-danger"></a>
                                     </td>
                                 </tr>
                             <?php
@@ -85,8 +85,3 @@ if (!defined('TEMPLATE')) {
     </div>
     <!--/.row-->
 </div>
-<!--/.main-->
-
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-table.js"></script>
