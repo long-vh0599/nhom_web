@@ -35,6 +35,34 @@ h2 {
 h3, h4 {
 	font-weight: 300;
 }
+/* login */
+.login {
+	padding-top: 2rem;
+	margin: auto;
+}
+.login-heading{
+	background-color: #fff;
+	font-family: arial;
+	font-size: 24px;
+	color: #0d62a3;
+}
+.login-body{
+	background-color: #fff;
+}
+.form-group{
+	padding: 5px 5px;
+}
+.checkbox{
+	padding: 5px 5px;
+}
+.checkbox label{
+	font-size: 14px;
+}
+.btn{
+	font-size: 14px;
+}
+
+/* header */
 .header{
 	background:#222;}	
 .form-control {
@@ -74,9 +102,62 @@ h3, h4 {
 	color: #30a5ff;
 	float: left;
 }
+
+/* body */
 .sidebar{
-	width: 25%;
-	/* height: ; */
+	background-color: #fff;
+	border-right: 2px solid #444;
+}
+.static {
+	padding-left: 10px;
+}
+.menu a{
+	font-size: 16px;
+}
+.active a{
+	color: #fff;
+}
+.active{
+	background-color: #59b7ff;
+}
+.menu-item{
+    list-style: none;
+    padding: 10px;
+    border-top: 1px solid #C60A11;
+}
+/* static */
+.breadcrumb {
+	display: flex;
+    list-style: none;
+    padding: 5px;
+}
+.page-header {
+	text-align: left;
+	font-size: 30px;
+	color: #238ada;
+}
+.panel{
+	background-color: #fff;
+}
+.panel-yellow img{
+	background-color: yellow;
+}
+.panel-orange img{
+	background-color: orange;
+}
+.panel-pink img{
+	background-color: pink;
+}
+.widget{
+	padding: 5px 5px;
+}
+.large {
+	color: #5f6468;
+	font-size: 2em;
+}
+.small{
+	color: #9fadbb;
+	font-size: 14px;
 }
 /*Buttons*/
 

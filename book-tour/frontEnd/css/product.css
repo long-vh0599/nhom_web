@@ -66,19 +66,6 @@
 	border-bottom:1px dashed #333;}
 .comment-item:last-child ul li:last-child{
 	border:none;}
-#pagination ul{
-	float:right;
-	margin-top:20px;}
-#pagination ul li a.page-link{
-	color:#333333;}			
-#pagination ul li a.page-link:hover{
-	background:#EB1F27;
-	color:#FFF;}
-#pagination ul li.active a{
-	background:#EB1F27;
-	border-color:#dee2e6;
-	color:#FFF;}
-
 .product h3{
 	font-family: arial;
 	font-size: 20px;

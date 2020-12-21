@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/search.css">
-    <!--<link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/category.css">-->
     <link rel="stylesheet" href="css/product.css">
 </head>
 
@@ -35,21 +33,22 @@
             </div>
             <div class="row">
                 <div id="main" class="col-lg-4 col-md-4 col-sm-4">
-                <?php
-                if(isset($_GET['page_layout'])){
-					switch($_GET['page_layout']){
-						case 'search': include_once('../model/search/search.php'); break;
-					}
-				}
-				else{ ?>
-					<div class="product">
-                        <h3>Các địa điểm du lịch trong nước</h3>
-                        <?php include_once('model/products/product_in.php'); ?>
-                    </div> 
-                <?php
-				}
-				?>
-                    
+                    <?php
+                    if (isset($_GET['page_layout'])) {
+                        switch ($_GET['page_layout']) {
+                            case 'search':
+                                include_once('../model/search/search.php');
+                                break;
+                        }
+                    } else { ?>
+                        <div class="product">
+                            <h3>Các địa điểm du lịch trong nước</h3>
+                            <?php include_once('model/products/product_in.php'); ?>
+                        </div>
+                    <?php
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>

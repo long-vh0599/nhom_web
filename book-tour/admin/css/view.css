@@ -4,7 +4,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
@@ -26,13 +26,13 @@
   .container {
     max-width: 1140px;
   }
-}
+} */
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -15px; */
 }
 
 .img-fluid {
@@ -47,8 +47,6 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (min-width: 576px) {
   .col-sm {
@@ -156,7 +154,4 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-}
-.login{
-  text-align: center;
 }

@@ -3,6 +3,17 @@ function byNow() {
     document.getElementById('frm').submit();
 }
 </script>
+<?php
+include "PHPMailer-master/src/PHPMailer.php";
+include "PHPMailer-master/src/Exception.php";
+include "PHPMailer-master/src/OAuth.php";
+include "PHPMailer-master/src/POP3.php";
+include "PHPMailer-master/src/SMTP.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+?>
 <!--	Cart	-->
 <div id="my-cart">
     <div class="row">
@@ -130,9 +141,6 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
 		Cám ơn quý khách đã mua hàng tại Shop của chúng tôi, bộ phận giao hàng sẽ liên hệ với quý khách để xác nhận sau 5 phút kể từ khi đặt hàng thành công và chuyển hàng đến quý khách chậm nhất sau 24 tiếng.
 	</p>
 	';
-<<<<<<< HEAD
-    
-=======
     //////////////////////////
 $mail = new PHPMailer(true);                              
     try {
@@ -164,7 +172,6 @@ $mail = new PHPMailer(true);
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
->>>>>>> d3f8e2ae153d01bce1d63de4e0d3ad25631ba2c8
 }
 ?>
 
@@ -190,7 +197,7 @@ $mail = new PHPMailer(true);
         </div>
     </form>
     <div class="row">
-        <div class="by-now col-lg-2 col-md-2 col-sm-4">
+        <div class="by-now col-lg-4 col-md-4 col-sm-4">
             <a onclick="byNow();" href="#">
                 <b>Mua ngay</b>
                 <span>Giao hàng tận nơi siêu tốc</span>

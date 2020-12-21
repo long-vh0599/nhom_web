@@ -1,7 +1,7 @@
 
 #header{
 	background:#222;}	
-#logo, #search, #cart{
+#logo, #cart{
 	height:60px;}
 #logo{
 	padding-top:5px;}
@@ -111,7 +111,7 @@
 /*	Fix Flex-box	*/	
 .product-list:last-child .product-item{
 	flex-grow:0;
-	flex-basis:32.6%;}
+	flex-basis:33%;}
 	
 #footer{
 	margin-top:20px;
@@ -134,22 +134,22 @@
 	
 	#cart{
 		text-align:left;}
-	#header{
+	/* #header{
 		position:relative;}
 	#header > button{
 		position:absolute;
 		top:15px;
 		right:15px;
 		background:#FFF;
-		}
+		} */
 	.menu-item{
 		float:none;
 		border:none;
 		border-bottom:1px solid #C60A11;}
 }
-@media (min-width:768px){
+/* @media (min-width:768px){
 	#menu{
 		display:block;}
 	#header > button{
 		display:none;}
-}
+} */
