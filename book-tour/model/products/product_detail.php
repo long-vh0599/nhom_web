@@ -69,62 +69,7 @@ $row = mysqli_fetch_array($query);
         </div>
     </div>
     <!--	End Comment	-->  
-    
-    <?php
-	//	Pagination
-	if(isset($_GET['page'])){
-		$page = $_GET['page'];
-	}
-	else{
-		$page = 1;	
-	}
-	$rows_per_page = 5;
-	$per_row = $page*$rows_per_page - $rows_per_page;
-	
-	
-    $sql = "SELECT * FROM comment
-			WHERE prd_id = $prd_id
-			ORDER BY comm_id ASC
-			LIMIT $per_row, $rows_per_page";
-	$query = mysqli_query($conn, $sql);
-	
-	//	Pagination Bar
-	$total_rows = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM comment WHERE prd_id = $prd_id"));
-	$total_pages = ceil($total_rows/$rows_per_page);
-	
-	$list_pages = '';
-	$page_prev = $page - 1;
-	
-	if($page == 1){
-		$disabled_prev = ' disabled';
-	}
-	else{
-		$disabled_prev = '';
-	}
-	
-	$list_pages .= '<li class="page-item'.$disabled_prev.'"><a class="page-link" href="index.php?page_layout=product&prd_id='.$prd_id.'&page='.$page_prev.'">Trang trước</a></li>';
-	for($j = 1; $j<=$total_pages; $j++){
-		
-		if($j == $page){
-			$active = ' active';
-		}
-		else{
-			$active = '';
-		}
-		
-		$list_pages .= '<li class="page-item'.$active.'"><a class="page-link" href="index.php?page_layout=product&prd_id='.$prd_id.'&page='.$j.'">'.$j.'</a></li>';
-	}
-	$page_next = $page + 1;
-	
-	if($page == $total_pages){
-		$disabled_next = ' disabled';
-	}
-	else{
-		$disabled_next = '';
-	}
-	
-	$list_pages .= '<li class="page-item'.$disabled_next.'"><a class="page-link" href="index.php?page_layout=product&prd_id='.$prd_id.'&page='.$page_next.'">Trang sau</a></li>';
-	?>  
+   
     <!--	Comments List	-->
     <div id="comments-list" class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">

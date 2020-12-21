@@ -3,6 +3,7 @@
 	border-top: 2px dashed #d3d3d3;
 	border-bottom: 2px dashed #d3d3d3;
 	background-color: #FFF;
+	height: 30px;
 }
 #search label, #search option {
 	font-family: arial;
@@ -15,3 +16,4 @@
 	background-color: #d3d3d3;
 	cursor: pointer;
 }
+ 

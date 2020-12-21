@@ -1,7 +1,6 @@
 <?php
 ob_start();
 session_start();
-define('TEMPLATE', true);
 include_once('config/connect.php');
 ?>
 <!DOCTYPE html>
@@ -10,11 +9,9 @@ include_once('config/connect.php');
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/handbook.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/search.css">

@@ -3,7 +3,7 @@ if (!defined('TEMPLATE')) {
     die('Bạn không có quyền truy cập vào file này !');
 }
 ?>
-<div class="col-sm-2 col-lg-1 main">
+<div class="col-sm-4 col-lg-4 main">
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#"><img class="icon-img" src="images/icon/home.png"></a></li>
