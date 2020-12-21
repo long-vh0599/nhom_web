@@ -200,7 +200,6 @@ $mail = new PHPMailer(true);
         <div class="by-now col-lg-4 col-md-4 col-sm-4">
             <a onclick="byNow();" href="#">
                 <b>Mua ngay</b>
-                <span>Giao hàng tận nơi siêu tốc</span>
             </a>
         </div>
         
