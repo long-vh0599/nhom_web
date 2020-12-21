@@ -130,7 +130,41 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
 		Cám ơn quý khách đã mua hàng tại Shop của chúng tôi, bộ phận giao hàng sẽ liên hệ với quý khách để xác nhận sau 5 phút kể từ khi đặt hàng thành công và chuyển hàng đến quý khách chậm nhất sau 24 tiếng.
 	</p>
 	';
+<<<<<<< HEAD
+    
+=======
     //////////////////////////
+$mail = new PHPMailer(true);                              
+    try {
+        //Server settings
+        $mail->SMTPDebug = 2;                                
+        $mail->isSMTP();                                     
+        $mail->Host = 'smtp.gmail.com';  
+        $mail->SMTPAuth = true;                          
+        $mail->Username = 'dothanhqt9x@gmail.com';                
+        $mail->Password = 'wihntmakecomfmzw';                        
+        $mail->SMTPSecure = 'tls';                           
+        $mail->Port = 587;                                  
+     
+        //Recipients
+        $mail->CharSet = 'UTF-8';
+        $mail->setFrom('dothanhqt9x@gmail.com', 'BacWithHerFriend Tour');				
+        $mail->addAddress($user_mail);              
+        
+        $mail->addCC('dothanhqt9x@gmail.com');
+        
+        //Content
+        $mail->isHTML(true);                                  // theo kieu HTML
+        $mail->Subject = 'Xác nhận đơn hàng từ BacWithHerFriend';
+        $mail->Body    = $str_body;
+        $mail->AltBody = 'Mô tả đơn hàng';
+     
+        $mail->send();
+        header('location:index.php?page_layout=success'); 
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    }
+>>>>>>> d3f8e2ae153d01bce1d63de4e0d3ad25631ba2c8
 }
 ?>
 
@@ -139,13 +173,13 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
     <form id="frm" method="post">
         <div class="row">
 
-            <div id="customer-name" class="col-lg-4 col-md-4 col-sm-12">
+            <div id="customer-name" class="col-lg-4 col-md-4 col-sm-4">
                 <input placeholder="Họ và tên (bắt buộc)" type="text" name="name" class="form-control" required>
             </div>
-            <div id="customer-phone" class="col-lg-4 col-md-4 col-sm-12">
+            <div id="customer-phone" class="col-lg-4 col-md-4 col-sm-4">
                 <input placeholder="Số điện thoại (bắt buộc)" type="text" name="phone" class="form-control" required>
             </div>
-            <div id="customer-mail" class="col-lg-4 col-md-4 col-sm-12">
+            <div id="customer-mail" class="col-lg-4 col-md-4 col-sm-4">
                 <input placeholder="Email (bắt buộc)" type="text" name="mail" class="form-control" required>
             </div>
             <div id="customer-add" class="col-lg-4 col-md-4 col-sm-4">
@@ -156,18 +190,12 @@ if (isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['mail']) && 
         </div>
     </form>
     <div class="row">
-        <div class="by-now col-lg-2 col-md-2 col-sm-2">
+        <div class="by-now col-lg-2 col-md-2 col-sm-4">
             <a onclick="byNow();" href="#">
                 <b>Mua ngay</b>
                 <span>Giao hàng tận nơi siêu tốc</span>
             </a>
         </div>
-        <div class="by-now col-lg-2 col-md-2 col-sm-2">
-            <a href="#">
-                <b>Trả góp Online</b>
-                <span>Vui lòng call (+84) 0988 550 553</span>
-            </a>
-        </div>
+        
     </div>
 </div>
-<!--	End Customer Info	-->

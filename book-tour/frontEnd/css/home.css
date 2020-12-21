@@ -1,11 +1,4 @@
-*{
-	margin:0;
-	padding:0;
-	font-family:arial;
-	font-size:13px;
-	color:#333;}
-body{
-	background:#E7ECF4;}	
+
 #header{
 	background:#222;}	
 #logo, #search, #cart{
@@ -14,15 +7,6 @@ body{
 	padding-top:5px;}
 #logo h1{
 	margin:0;}
-#search input{
-	width:50%;
-	border-radius: 3px 0 0 3px;}	
-#search button{
-	border-radius: 0 3px 3px 0;}	
-#search button{
-	background:#EB1F27;}	
-#search button:hover{
-	background:#C60A11;}
 #login{
 	text-align: right;
 	margin-top: 1.5rem !important;
@@ -124,7 +108,11 @@ body{
 	color: darkgrey;
 	font-size: 14px;
 }
-
+/*	Fix Flex-box	*/	
+.product-list:last-child .product-item{
+	flex-grow:0;
+	flex-basis:32.6%;}
+	
 #footer{
 	margin-top:20px;
 	background:#FFF;}

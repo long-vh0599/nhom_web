@@ -9,7 +9,5 @@ else{
 	$_SESSION['cart'][$prd_id] = 1;
 }
 header('location: ../../frontEnd/index.php?page_layout=cart');
-//header('location: ../../../../frontEnd/index.php?page_layout=cart');
-//header('location: http://toidicode.com');
 
 ?>
